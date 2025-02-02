@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Tugas Machine Learning</title>
+{% endblock %}
+
+{% block body %}
+<div class="form-container">
+    <form method="GET" action="/">
+      {% if finalData == 1 %}
+      <h2 align="center">POSITIF DIABETES</h2>
+
+      {% else %}
+      <h2 align="center">NEGATIF DIABETES</h2>
+
+      {% endif %}
+      
+      <br>
+      <button type="submit" class="submit-btn">Selesai</button>
+      <br>
+    </form>
+  </div>
+{% endblock %}
